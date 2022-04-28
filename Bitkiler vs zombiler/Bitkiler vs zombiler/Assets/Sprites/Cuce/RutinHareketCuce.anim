@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 6596602527884249616, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 0.39285713
+    - time: 0.21428572
       value: {fileID: 3142275232805546312, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 0.64285713
+    - time: 0.39285713
       value: {fileID: -5226189303271360158, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 0.85714287
+    - time: 0.53571427
       value: {fileID: -5793404527755340603, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 1.25
+    - time: 0.6785714
       value: {fileID: -5917511308473996224, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 1.7142857
+    - time: 1
       value: {fileID: -3630992422346326685, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
-    - time: 2.107143
+    - time: 1.2142857
       value: {fileID: -8494277344112980447, guid: a78b0e122fd6b5f4984aad7e307e2294, type: 3}
     attribute: m_Sprite
     path: Vucut
@@ -64,7 +64,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.1428573
+    m_StopTime: 1.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

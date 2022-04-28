@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e32ab5efdb14340abf904d006c5b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kacSaniyedeBirDogacak: 5
+  kacSaniyedeBirDogacak: 30
 --- !u!61 &1607639373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017032146, y: 0.20438576}
+  m_Offset: {x: -0.2160542, y: 0.27178425}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -175,7 +175,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2725143, y: 0.5230998}
+  m_Size: {x: 1.738687, y: 0.65789676}
   m_EdgeRadius: 0
 --- !u!50 &7955247920191120601
 Rigidbody2D:

@@ -24,11 +24,11 @@ public class AtesEtme : MonoBehaviour
     {
         if (SaldiranObjeYolaGirdiMi())
         {
-            objeninAnimator.SetBool("SaldiriVarMi", true);
+            objeninAnimator.SetBool("Saldirivarmi", true);
         }
         else
         {
-            objeninAnimator.SetBool("SaldiriVarMi", false);
+            objeninAnimator.SetBool("Saldirivarmi", false);
         }
     }
     private void AtesEt()
@@ -58,7 +58,6 @@ public class AtesEtme : MonoBehaviour
             return false;
         }
 
-
         foreach (Transform saldiranObje in SaldiriYolu.transform)
         {
             if (saldiranObje.transform.position.x > transform.position.x)
@@ -68,5 +67,6 @@ public class AtesEtme : MonoBehaviour
         }
 
         return false;
+        
     }
 }
