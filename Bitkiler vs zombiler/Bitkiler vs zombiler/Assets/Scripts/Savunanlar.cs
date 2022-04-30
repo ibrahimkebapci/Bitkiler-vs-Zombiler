@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class Savunanlar : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   private ParayiTopla paraKazanma;
+
+   private void Start()
+   {
+        paraKazanma = GameObject.FindObjectOfType<ParayiTopla>();
+   }
+   public void ParayiArttir(int paraMiktari)
     {
-        
+        paraKazanma.ParayiEkle(paraMiktari);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-    }
 }
