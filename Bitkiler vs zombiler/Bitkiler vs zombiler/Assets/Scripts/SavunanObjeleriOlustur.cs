@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class SavunanObjeleriOlustur : MonoBehaviour
 {
+
     public Camera bizimKameramiz;
+    private ParayiTopla toplamPara;
+
     private GameObject savunanObjeParent;
-    // Start is called before the first frame update
+
     private void Start()
     {
+        toplamPara = GameObject.FindObjectOfType<ParayiTopla>();
         savunanObjeParent = GameObject.Find("Savunanlar");
 
         if (!savunanObjeParent)
@@ -17,14 +21,38 @@ public class SavunanObjeleriOlustur : MonoBehaviour
         }
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
     private void OnMouseDown()
     {
         Vector2 gercekDunyaPozisyonu = farePozisyonunuGercekDunyayaAktar();
         Vector2 gercekDunyaPozisyonunuYukariYuvarlama = pozisyonuYuvarla(gercekDunyaPozisyonu);
+        GameObject olusacakSavunanObje = PanelElemanKontrol.seciliEleman;
 
-        GameObject yeniSavunanObje = Instantiate(PanelElemanKontrol.seciliEleman, gercekDunyaPozisyonunuYukariYuvarlama, Quaternion.identity);
+        int savunanObjeninMaliyeti = olusacakSavunanObje.GetComponent<Savunanlar>().maliyet;
+
+        if (toplamPara.ParayiKullan(savunanObjeninMaliyeti) == ParayiTopla.ObjeOlusturmaDurumu.BASARILI)
+        {
+            ObjeyiOlustur(olusacakSavunanObje, gercekDunyaPozisyonunuYukariYuvarlama);
+        }
+        else
+        {
+            Debug.Log("Bakiyeniz yetersiz.");
+        }
+
+
+    }
+
+    private void ObjeyiOlustur(GameObject olusacakSavunanObjemiz, Vector2 gercekDunyaPozisyonunuYukariYuvarlamamiz)
+    {
+        GameObject yeniSavunanObje = Instantiate(PanelElemanKontrol.seciliEleman, gercekDunyaPozisyonunuYukariYuvarlamamiz, Quaternion.identity) as GameObject;
         yeniSavunanObje.transform.parent = savunanObjeParent.transform;
     }
+
     Vector2 pozisyonuYuvarla(Vector2 yuvarlanacakPozisyon)
     {
         float yuvarlaX = Mathf.CeilToInt(yuvarlanacakPozisyon.x);
@@ -35,11 +63,11 @@ public class SavunanObjeleriOlustur : MonoBehaviour
     {
         float fareX = Input.mousePosition.x;
         float fareY = Input.mousePosition.y;
-        float kameraUzakligi = 10f;
+        float kameraUzakligi = 15f;
 
-        Vector3 mousePozisyonu = new Vector3(fareX,fareY, kameraUzakligi);
+        Vector3 mousePozisyonu = new Vector3(fareX, fareY, kameraUzakligi);
         Vector2 gercekDunyadakiPozisyonu = bizimKameramiz.ScreenToWorldPoint(mousePozisyonu);
-       
+
         return gercekDunyadakiPozisyonu;
     }
 }

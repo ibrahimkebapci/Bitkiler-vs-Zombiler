@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Tas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.tag != "Tilki" && collision.gameObject.tag != "Mermi")
+        {
+            GetComponent<Animator>().SetBool("SaldiriVarMi", true);
+        }
+
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GetComponent<Animator>().SetBool("SaldiriVarMi", false);
     }
 }

@@ -1,18 +1,20 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Savunanlar : MonoBehaviour
 {
-   private ParayiTopla paraKazanma;
 
-   private void Start()
-   {
-        paraKazanma = GameObject.FindObjectOfType<ParayiTopla>();
-   }
-   public void ParayiArttir(int paraMiktari)
+    private ParayiTopla paraKazanma;
+    public int maliyet;
+    private void Start()
     {
-        paraKazanma.ParayiEkle(paraMiktari);
+        paraKazanma = GameObject.FindObjectOfType<ParayiTopla>();
     }
 
+    public void ParayiArttir(int paraMiktari)
+    {
+        paraKazanma.ParayiEkle(paraMiktari);
+        Debug.Log("Eklenen para miktarı" + paraMiktari);
+    }
 }
