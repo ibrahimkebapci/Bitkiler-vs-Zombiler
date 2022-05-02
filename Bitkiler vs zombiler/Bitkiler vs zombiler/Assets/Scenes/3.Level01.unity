@@ -448,6 +448,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
+      propertyPath: saldiranObjelerinPrefabi.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: saldiranObjelerinPrefabi.Array.data[0]
       value: 
       objectReference: {fileID: 7574760996941646500, guid: d7fd2ed05c2f4be4b931b4373bf7f887, type: 3}
@@ -648,6 +652,10 @@ PrefabInstance:
     - target: {fileID: 1909115584467188677, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
+      propertyPath: saldiranObjelerinPrefabi.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: saldiranObjelerinPrefabi.Array.data[0]
@@ -935,7 +943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1001779677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1269,6 +1277,10 @@ PrefabInstance:
     - target: {fileID: 1909115584467188677, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
+      propertyPath: saldiranObjelerinPrefabi.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: saldiranObjelerinPrefabi.Array.data[0]
@@ -1731,6 +1743,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
+      propertyPath: saldiranObjelerinPrefabi.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: saldiranObjelerinPrefabi.Array.data[0]
       value: 
       objectReference: {fileID: 7574760996941646500, guid: d7fd2ed05c2f4be4b931b4373bf7f887, type: 3}
@@ -2144,6 +2160,10 @@ PrefabInstance:
     - target: {fileID: 1909115584467188677, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
+      propertyPath: saldiranObjelerinPrefabi.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3768791261932734246, guid: b923af9e456b5cb469ae4429313f176f, type: 3}
       propertyPath: saldiranObjelerinPrefabi.Array.data[0]

@@ -5,7 +5,6 @@ using UnityEngine;
 public class SaldiranObjeyiYolaKoy : MonoBehaviour
 {
     public GameObject[] saldiranObjelerinPrefabi;
-    // Update is called once per frame
     void Update()
     {
         foreach (GameObject saldiranObjeninPrefabi in saldiranObjelerinPrefabi)
@@ -41,7 +40,4 @@ public class SaldiranObjeyiYolaKoy : MonoBehaviour
             return false;
         }
     }
-
-
-
 }
