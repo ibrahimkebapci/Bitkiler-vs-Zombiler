@@ -8,7 +8,6 @@ public class MuzikKontrolu : MonoBehaviour
     //müzik oynatıcısı tekrar tekrar oluşmasın diye static olarak tanımlıyoruz
     public void Awake()
     {
-        Debug.Log("Awake Çalıştı");
         if (muzikOynaticisi != null)
         {
             Destroy(gameObject);
