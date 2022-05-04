@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class SaldiranObjeyiYolaKoy : MonoBehaviour
 {
+
     public GameObject[] saldiranObjelerinPrefabi;
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
         foreach (GameObject saldiranObjeninPrefabi in saldiranObjelerinPrefabi)
@@ -29,8 +37,10 @@ public class SaldiranObjeyiYolaKoy : MonoBehaviour
         float dogmaBeklemeSuresi = saldiriYapanObje.kacSaniyedeBirDogacak;
         float dogmaBeklemeOrani = 1 / dogmaBeklemeSuresi;
 
+        //0.16  //0.025  0.04  4/100
         float sonOran = dogmaBeklemeOrani * Time.deltaTime;
 
+        //0.04
         if (Random.value < sonOran)
         {
             return true;
@@ -40,4 +50,7 @@ public class SaldiranObjeyiYolaKoy : MonoBehaviour
             return false;
         }
     }
+
+
+
 }

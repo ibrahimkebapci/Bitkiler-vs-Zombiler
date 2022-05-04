@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AtesEtme : MonoBehaviour
 {
+
     public GameObject mermi, mermininCikisNoktasi;
     private GameObject mermiParent;
     private Animator objeninAnimator;
@@ -57,7 +58,6 @@ public class AtesEtme : MonoBehaviour
         {
             return false;
         }
-
         foreach (Transform saldiranObje in SaldiriYolu.transform)
         {
             if (saldiranObje.transform.position.x > transform.position.x)
@@ -67,6 +67,5 @@ public class AtesEtme : MonoBehaviour
         }
 
         return false;
-        
     }
 }

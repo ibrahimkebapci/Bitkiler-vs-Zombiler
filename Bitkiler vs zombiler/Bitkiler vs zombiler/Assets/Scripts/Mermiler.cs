@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Mermiler : MonoBehaviour
 {
+
     public float hiz, verdigiZarar;
-    // Start is called before the first frame update
+
+    // Use this for initialization
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.right * hiz * Time.deltaTime); 
+        transform.Translate(Vector3.right * hiz * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,11 +24,12 @@ public class Mermiler : MonoBehaviour
         Saldiranlar saldiranObje = collision.gameObject.GetComponent<Saldiranlar>();
         Saglik saldiranObjeninCani = collision.gameObject.GetComponent<Saglik>();
 
-        if(saldiranObje && saldiranObjeninCani)
+        if (saldiranObje && saldiranObjeninCani)
         {
             saldiranObjeninCani.ZararAl(verdigiZarar);
             Destroy(gameObject);
-            
+
         }
+
     }
 }

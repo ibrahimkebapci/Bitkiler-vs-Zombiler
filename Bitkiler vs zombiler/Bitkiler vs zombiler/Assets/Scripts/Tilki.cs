@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Saldiranlar))]
+//[RequireComponent(typeof(Saldiranlar))]
 public class Tilki : MonoBehaviour
 {
+
     private Animator tilkiAnimator;
     private Saldiranlar saldiranObje;
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
         tilkiAnimator = GetComponent<Animator>();
@@ -17,22 +18,23 @@ public class Tilki : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject tilkininEtkilesimeGirdigiObje = collision.gameObject;
-        if (!tilkininEtkilesimeGirdigiObje.GetComponent<Savunanlar>()) 
+
+        if (!tilkininEtkilesimeGirdigiObje.GetComponent<Savunanlar>())
         {
             return;
         }
         else if (tilkininEtkilesimeGirdigiObje.GetComponent<Tas>())
         {
-            tilkiAnimator.SetTrigger("ZiplamaTilki");
+            tilkiAnimator.SetTrigger("ziplamaIslemi");
         }
         else
         {
-            tilkiAnimator.SetBool("Saldirivarmi", true);
+            tilkiAnimator.SetBool("SaldiriVarMi", true);
             saldiranObje.HedefiBelirle(tilkininEtkilesimeGirdigiObje);
         }
     }
