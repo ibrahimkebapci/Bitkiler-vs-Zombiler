@@ -6,8 +6,8 @@ public class SavunanObjeleriOlustur : MonoBehaviour
 {
 
     public Camera bizimKameramiz;
-    private ParayiTopla toplamPara;
 
+    private ParayiTopla toplamPara;
     private GameObject savunanObjeParent;
 
     private void Start()
@@ -19,12 +19,6 @@ public class SavunanObjeleriOlustur : MonoBehaviour
         {
             savunanObjeParent = new GameObject("Savunanlar");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnMouseDown()
@@ -43,8 +37,6 @@ public class SavunanObjeleriOlustur : MonoBehaviour
         {
             Debug.Log("Bakiyeniz yetersiz.");
         }
-
-
     }
 
     private void ObjeyiOlustur(GameObject olusacakSavunanObjemiz, Vector2 gercekDunyaPozisyonunuYukariYuvarlamamiz)
