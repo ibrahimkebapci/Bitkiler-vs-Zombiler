@@ -11,20 +11,17 @@ public class Kertenkele : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        /*
         kertenkeleAnimator = GetComponent<Animator>();
         saldiranObje = GetComponent<Saldiranlar>();
+        */    
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D colider2D)
     {
+        GameObject kertenkeleninEtkilesimeGirdigiObje = colider2D.gameObject;
 
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        GameObject kertenkeleninEtkilesimeGirdigiObje = collision.gameObject;
-
-        if (!kertenkeleninEtkilesimeGirdigiObje.GetComponent<Savunanlar>())
+        if (!(colider2D.gameObject.tag == "Savunanlar"))
         {
             return;
         }
@@ -33,5 +30,15 @@ public class Kertenkele : MonoBehaviour
             kertenkeleAnimator.SetBool("SaldiriVarMi", true);
             saldiranObje.HedefiBelirle(kertenkeleninEtkilesimeGirdigiObje);
         }
+        /*if (!kertenkeleninEtkilesimeGirdigiObje.GetComponent<Savunanlar>())
+        {
+            return;
+        }
+        else
+        {
+            kertenkeleAnimator.SetBool("SaldiriVarMi", true);
+            saldiranObje.HedefiBelirle(kertenkeleninEtkilesimeGirdigiObje);
+        }
+        */
     }
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1456169274286421241}
   m_Layer: 0
   m_Name: Kertenkele
-  m_TagString: Untagged
+  m_TagString: Saldiranlar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
