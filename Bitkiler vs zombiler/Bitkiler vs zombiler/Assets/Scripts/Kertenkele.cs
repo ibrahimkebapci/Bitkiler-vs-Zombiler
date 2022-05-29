@@ -11,10 +11,10 @@ public class Kertenkele : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        /*
+        
         kertenkeleAnimator = GetComponent<Animator>();
         saldiranObje = GetComponent<Saldiranlar>();
-        */    
+           
     }
 
     private void OnTriggerEnter2D(Collider2D colider2D)

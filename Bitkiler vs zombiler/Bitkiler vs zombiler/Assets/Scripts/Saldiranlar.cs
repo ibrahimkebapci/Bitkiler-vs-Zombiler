@@ -6,7 +6,7 @@ using UnityEngine;
 public class Saldiranlar : MonoBehaviour
 {
 
-    private float SuAnkiHiz;
+    public float SuAnkiHiz;
     private GameObject mevcutHedef;
     private Animator objeninAnimatoru;
 
