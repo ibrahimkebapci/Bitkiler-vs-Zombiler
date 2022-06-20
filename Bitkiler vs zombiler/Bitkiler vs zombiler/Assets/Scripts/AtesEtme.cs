@@ -54,7 +54,11 @@ public class AtesEtme : MonoBehaviour
     }
     bool SaldiranObjeYolaGirdiMi()
     {
-        if (SaldiriYolu.transform.childCount <= 0)
+        if(SaldiriYolu == null)
+        {
+            print(transform.position);
+        }
+        if (SaldiriYolu.transform.childCount <= -3)
         {
             return false;
         }

@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//[RequireComponent(typeof(Rigidbody2D))]
 public class Saldiranlar : MonoBehaviour
 {
-
     public float SuAnkiHiz;
     private GameObject mevcutHedef;
     private Animator objeninAnimatoru;
@@ -14,26 +12,16 @@ public class Saldiranlar : MonoBehaviour
     public float kacSaniyedeBirDogacak;
     void Start()
     {
-        
         objeninAnimatoru = GetComponent<Animator>();
     }
-
     void Update()
     {
         transform.Translate(Vector3.left * SuAnkiHiz * Time.deltaTime);
-        if (!mevcutHedef)
-        {
-            objeninAnimatoru.SetBool("Saldirivarmi", false);
-        }
     }
-
-
-
     public void SuAnkiHiziAyarla(float hiz)
     {
         SuAnkiHiz = hiz;
     }
-
     public void ZararVer(float zararMiktari)
     {
         if (mevcutHedef)
@@ -45,7 +33,6 @@ public class Saldiranlar : MonoBehaviour
             }
         }
     }
-
     public void HedefiBelirle(GameObject hedefimiz)
     {
         mevcutHedef = hedefimiz;

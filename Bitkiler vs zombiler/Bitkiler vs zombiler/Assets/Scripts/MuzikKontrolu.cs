@@ -23,8 +23,4 @@ public class MuzikKontrolu : MonoBehaviour
         GetComponent<AudioSource>().volume = SesDegeri;
         //yeni ses değerini atayabilmek için kullanılan kod satırı
     }
-    private void Start()
-    {
-
-    }
 }

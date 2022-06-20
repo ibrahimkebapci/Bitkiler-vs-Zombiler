@@ -38,7 +38,7 @@ public class OyuncuAyarlar : MonoBehaviour
     public static bool SeviteAcikMi(int seviye)
     {
         int seviyeDegeri = PlayerPrefs.GetInt(SEVIYE_ANAHTARI + seviye.ToString());
-        bool SeviyeAcikMi = (seviyeDegeri == 1); // seviye de�erini 1 e e�it mi de�il mi �ekilnde bir sorgu yap�p 0-1 de�erlerinden birisini elde ediyoruz
+        bool SeviyeAcikMi = (seviyeDegeri == 1); 
         if(seviye < SceneManager.sceneCountInBuildSettings)
         {
             return SeviyeAcikMi;
@@ -54,9 +54,6 @@ public class OyuncuAyarlar : MonoBehaviour
     {
         if(zorluk >= 1f && zorluk <= 5f)
         {
-            //1 ile 5 aras�nda bir zorluk aral��� belirliyoruz
-            //ve bu zorluk ayar�n� oyuncunun se�ti�i anahtara g�re belirliyoruz
-
             PlayerPrefs.SetFloat(ZORLUK_ANAHTARI,zorluk);
         }
         else

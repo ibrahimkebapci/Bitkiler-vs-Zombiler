@@ -23,6 +23,7 @@ public class Kertenkele : MonoBehaviour
 
         if (!(colider2D.gameObject.tag == "Savunanlar"))
         {
+           
             return;
         }
         else
@@ -30,15 +31,5 @@ public class Kertenkele : MonoBehaviour
             kertenkeleAnimator.SetBool("SaldiriVarMi", true);
             saldiranObje.HedefiBelirle(kertenkeleninEtkilesimeGirdigiObje);
         }
-        /*if (!kertenkeleninEtkilesimeGirdigiObje.GetComponent<Savunanlar>())
-        {
-            return;
-        }
-        else
-        {
-            kertenkeleAnimator.SetBool("SaldiriVarMi", true);
-            saldiranObje.HedefiBelirle(kertenkeleninEtkilesimeGirdigiObje);
-        }
-        */
     }
 }

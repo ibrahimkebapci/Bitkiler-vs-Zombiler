@@ -17,7 +17,6 @@ public class SecenekKontrolu : MonoBehaviour
         ZorlukAyari.value = OyuncuAyarlar.zorluguAl();
         MuzikYoneticisi = GameObject.FindObjectOfType<MuzikKontrolu>(); //// m�zikKontrol� tipinde olan nesneyi bulmak i�in kullan�l�r
     }
-
     void Update()
     {
         MuzikYoneticisi.SesiAyarla(SesAyari.value);
@@ -30,7 +29,6 @@ public class SecenekKontrolu : MonoBehaviour
         OyuncuAyarlar.ZorluguAyarla(ZorlukAyari.value);
         sahneYoneticisi.IsimleSahneCagirma("1.Menu");
     }
-  
     public void BaslangicAyarlariniUygula()
     {
         SesAyari.value = 0.5f;
