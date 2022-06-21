@@ -6,21 +6,9 @@ public class Saglik : MonoBehaviour
 {
 
     public float Can;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void ZararAl(float zararMiktari)
     {
-        Can -= zararMiktari;   // Can = Can - zararMiktari;
+        Can -= zararMiktari;   
         if (Can <= 0)
         {
             ObjeyiYokEt();

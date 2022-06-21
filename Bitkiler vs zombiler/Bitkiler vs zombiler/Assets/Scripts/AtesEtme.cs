@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AtesEtme : MonoBehaviour
 {
-
     public GameObject mermi, mermininCikisNoktasi;
     private GameObject mermiParent;
     private Animator objeninAnimator;
@@ -54,10 +53,7 @@ public class AtesEtme : MonoBehaviour
     }
     bool SaldiranObjeYolaGirdiMi()
     {
-        if(SaldiriYolu == null)
-        {
-            print(transform.position);
-        }
+      
         if (SaldiriYolu.transform.childCount <= -3)
         {
             return false;

@@ -19,11 +19,11 @@ public class Kertenkele : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D colider2D)
     {
+
         GameObject kertenkeleninEtkilesimeGirdigiObje = colider2D.gameObject;
 
         if (!(colider2D.gameObject.tag == "Savunanlar"))
         {
-           
             return;
         }
         else

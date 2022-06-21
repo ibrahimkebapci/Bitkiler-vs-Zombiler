@@ -37,5 +37,4 @@ public class Saldiranlar : MonoBehaviour
     {
         mevcutHedef = hedefimiz;
     }
-
 }
