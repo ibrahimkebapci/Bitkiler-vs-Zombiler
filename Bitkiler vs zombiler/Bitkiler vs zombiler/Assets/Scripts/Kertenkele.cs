@@ -10,13 +10,10 @@ public class Kertenkele : MonoBehaviour
     private Saldiranlar saldiranObje;
     // Use this for initialization
     void Start()
-    {
-        
+    {     
         kertenkeleAnimator = GetComponent<Animator>();
-        saldiranObje = GetComponent<Saldiranlar>();
-           
+        saldiranObje = GetComponent<Saldiranlar>();           
     }
-
     private void OnTriggerEnter2D(Collider2D colider2D)
     {
 
@@ -24,12 +21,13 @@ public class Kertenkele : MonoBehaviour
 
         if (!(colider2D.gameObject.tag == "Savunanlar"))
         {
-            return;
+            kertenkeleAnimator.SetBool("Saldirivarmi", false);
         }
-        else
+        else 
         {
-            kertenkeleAnimator.SetBool("SaldiriVarMi", true);
+            kertenkeleAnimator.SetBool("Saldirivarmi", true);
             saldiranObje.HedefiBelirle(kertenkeleninEtkilesimeGirdigiObje);
         }
+       
     }
 }

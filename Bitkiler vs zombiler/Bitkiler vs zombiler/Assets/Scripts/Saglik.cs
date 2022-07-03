@@ -14,7 +14,6 @@ public class Saglik : MonoBehaviour
             ObjeyiYokEt();
         }
     }
-
     public void ObjeyiYokEt()
     {
         Destroy(gameObject);

@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hiz: 5
-  verdigiZarar: 30
+  verdigiZarar: 20
 --- !u!95 &1525970334
 Animator:
   serializedVersion: 3

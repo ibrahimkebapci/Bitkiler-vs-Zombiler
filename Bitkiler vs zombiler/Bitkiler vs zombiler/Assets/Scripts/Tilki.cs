@@ -17,6 +17,7 @@ public class Tilki : MonoBehaviour
 
         if (!(colider2D.gameObject.tag == "Savunanlar"))
         {
+            tilkiAnimator.SetBool("Saldirivarmi", false);
             return;
         }
         else if (colider2D.gameObject.tag == "Tas")
